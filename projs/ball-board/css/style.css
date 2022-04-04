@@ -1,0 +1,236 @@
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+body {
+    background-color: rgb(35, 137, 255);
+    color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+table {
+    table-layout: auto;
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(255, 255, 171, 0.54);
+    box-shadow: 1px 1px 31px 3px rgba(255, 255, 171, 0.54);
+    position: absolute;
+
+    width: 760px;
+    height: 600px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+.cell {
+    width: 8.8%;
+    height: 10%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cell img {
+    width: 50px;
+    height: auto;
+}
+
+.floor {
+    background-color: #181827;
+}
+
+.wall, .passage {
+    background-color: rgb(210, 250, 79);
+    width: 10px;
+    height: 10px;
+    text-align: center;
+}
+
+.passage {
+    background-color: #181827;
+}
+
+.restart {
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #181827;
+    font-size: 30px;
+    background-color: rgb(210, 250, 79);
+    border-radius: 90px;
+    display: -moz-box;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 200px;
+    height: 75px;
+    font-family: Comic;
+}
+
+span {
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    position: absolute;
+    color: #181827;
+    font-size: 16px;
+}
+
+.ball-counter {
+    color: rgb(210, 250, 79);
+    ;
+    position: absolute;
+    left: 35%;
+    top: 7.5%;
+    /* transform: translate(-50%, -50%); */
+    height: 60px;
+    width: 100px;
+    z-index: 2;
+    font-family: digits-d;
+    font-size: 66px;
+}
+
+@font-face {
+    font-family: 'digits-d';
+    src: url(font/digits-d.otf);
+}
+
+
+.gradiant-direction--1--1 {
+    background-image: linear-gradient(to top left, rgb(8, 123, 255) 35%, #181827 45%, #181827);
+    background-size: 160% 160%;
+    animation: 1.5s linear 1s infinite alternate AnimationName;
+
+}
+
+.gradiant-direction--1-0 {
+    background-image: linear-gradient(360deg, rgb(8, 123, 255) 51%, #181827 65%, #181827);
+    background-size: 1% 220%;
+    animation: 1.5s linear 1s infinite alternate AnimationName;
+
+}
+
+.gradiant-direction--1-1 {
+    background-image: linear-gradient(45deg, rgb(8, 123, 255) 32%, #181827 42%, #181827);
+    background-size: 145% 160%;
+    animation: 1.5s linear 1s infinite alternate i2;
+
+}
+
+
+.gradiant-direction-0--1 {
+    background-image: linear-gradient(to left, rgb(8, 123, 255) 51%, #181827 65%, #181827);
+    background-size: 220% 1%;
+    animation: 1.5s linear 1s infinite alternate AnimationName;
+
+}
+
+.gradiant-direction-0-0 {
+    background: rgb(8, 123, 255) 50%;
+
+
+}
+
+.gradiant-direction-0-1 {
+    background-image: linear-gradient(90deg, rgb(8, 123, 255) 38%, #181827 55%, #181827);
+    background-size: 170% 1%;
+    animation: 1.5s linear 1s infinite alternate-reverse i3;
+}
+
+.gradiant-direction-1--1 {
+    background-image: linear-gradient(225deg, rgb(8, 123, 255) 36%, #181827 46%, #181827);
+    background-size: 226% 110%;
+    animation: 1.5s linear 1s infinite alternate AnimationName;
+}
+
+.gradiant-direction-1-0 {
+    background-image: linear-gradient(180deg, rgb(8, 123, 255) 20%, #181827 36%, #181827);
+    background-size: 1% 220%;
+    animation: 1.5s linear 1s infinite reverse i4;
+}
+
+.gradiant-direction-1-1 {
+    background-image: linear-gradient(135deg, rgb(8, 123, 255) 32%, #181827 43%, #181827);
+    background-size: 70px 150px;
+    animation: 1.5s linear 1s infinite alternate i5;
+
+}
+
+@-webkit-keyframes i5 {
+    0% {
+        background-position: 80% 80%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 80% 80%;
+    }
+}
+
+@-webkit-keyframes i4 {
+    0% {
+        background-position: 0% 45%
+    }
+
+    50% {
+        background-position: 0% 0%
+    }
+
+    100% {
+        background-position: 0% 45%
+    }
+}
+
+@-webkit-keyframes i3 {
+    0% {
+        background-position: 100% 0%
+    }
+
+    50% {
+        background-position: 40% 0%
+    }
+
+    100% {
+        background-position: 100% 0%
+    }
+}
+
+@-webkit-keyframes i2 {
+    0% {
+        background-position: 100% 0%
+    }
+
+    50% {
+        background-position: 0% 0%
+    }
+
+    100% {
+        background-position: 100% 0%
+    }
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 0%
+    }
+
+    50% {
+        background-position: 40% 40%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}

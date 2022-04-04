@@ -1,0 +1,104 @@
+body {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/1.webp")
+}
+
+.restart {
+    cursor: pointer;
+    text-align: right;
+    line-height: 40px;
+    font-size: 30px;
+    color: rgb(153, 153, 153);
+    display: -moz-box;
+    position: absolute;
+    left: 20px;
+    top: 7%;
+    width: 100px;
+    height: 50px;
+
+}
+
+.score {
+    color: rgb(153, 153, 153);
+    position: absolute;
+    position: absolute;
+    left: 30px;
+    top: 14%;
+    width: 100px;
+    height: 50px;
+    font-family: digits-d;
+    font-size: 40px;
+}
+
+.end-message {
+    z-index: 1;
+    text-align: center;
+    color: #0202af7c;
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 75px;
+    font-family: end-message;
+}
+
+
+.board {
+    position: absolute;
+    width: 610px;
+    height: 610px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0);
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.row {
+    background-color: rgba(0, 0, 0, 0);
+    table-layout: fixed;
+}
+
+.cell {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 50px;
+    height: 50px;
+}
+
+.frame {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.frame.horizontal {
+    width: 50px;
+    height: .1px;
+}
+
+.frame.vertical {
+    width: .1px;
+    height: 50px;
+}
+
+.frame.corners {
+    width: .1px;
+    height: .1px;
+}
+
+.hero {
+    color: darkgoldenrod;
+}
+
+@font-face {
+    font-family: 'end-message';
+    src: url(font/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'digits-d';
+    src: url(font/digits-d.otf);
+}
