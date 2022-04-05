@@ -1,0 +1,39 @@
+body {
+    background-color: black
+}
+
+.start, .reset {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    border: 5px solid black;
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: rgba(3, 245, 3, 0.781);
+    width: 15%;
+    padding: 0.6%;
+    font-size: 30px;
+
+}
+
+.reset {
+    top: 20%;
+
+}
+
+table {
+    overflow: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 750px;
+    height: 750px;
+}
+
+td {
+    border: 1px solid greenyellow;
+    background-color: black
+}

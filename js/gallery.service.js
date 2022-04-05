@@ -32,6 +32,16 @@ var Gprojs = [
         title: 'Retro',
         category: 'game'
     },
+    {
+        id: "gameOfLife",
+        name: "game-of-life",
+        title: "infinite it can be i see",
+        desc: "go live",
+        publishedAt: 2022.03,
+        labels: ["Matrixes", "keyboard events"],
+        title: 'Retro',
+        category: 'game'
+    },
 
 ]
 

@@ -148,7 +148,7 @@ body {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(0, 242, 255);
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -179,17 +179,29 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: #22222200;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        
     }
    
 }
+section#services {
+    color: rgb(124, 124, 124);
+    padding: 15vw;
+    background-image: url("../img/backgroundMid.jpg");
+    background-size: 85vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    top: 100px;
+    
+}
 header.masthead {
     text-align: center;
-    color: white;
+    color: rgb(111, 255, 0);
     background-image: url("../img/morphs_all.gif");
     background-repeat: no-repeat;
     background-attachment: scroll;
